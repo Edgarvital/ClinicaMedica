@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.ui.controladores.cadastro.atendente.CadastroMedicoFXMLController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="275.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagens/Health-03-512.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="297.0" layoutY="14.0" text="Cadastro de Médico" />
+      <Label layoutX="34.0" layoutY="225.0" prefHeight="24.0" prefWidth="33.0" text="Login:" />
+      <Label layoutX="34.0" layoutY="268.0" text="Senha:" />
+      <Label layoutX="34.0" layoutY="309.0" text="Nome:" />
+      <Label layoutX="40.0" layoutY="346.0" text="CPF:" />
+      <Label layoutX="386.0" layoutY="216.0" text="Telefone:" />
+      <TextField fx:id="login" layoutX="84.0" layoutY="225.0" promptText="Digite o Login do Medico" />
+      <TextField fx:id="nome" layoutX="86.0" layoutY="305.0" promptText="Digite o Nome do Medico" />
+      <TextField fx:id="cpf" layoutX="86.0" layoutY="342.0" promptText="Digite o CPF do Medico" />
+      <TextField fx:id="telefone" layoutX="445.0" layoutY="212.0" promptText="Digite o Telefone do Médico" />
+      <PasswordField fx:id="senha" layoutX="85.0" layoutY="264.0" promptText="***********" />
+      <DatePicker fx:id="dataNascimento" layoutX="441.0" layoutY="297.0" promptText="18/06/1998" />
+      <Label layoutX="318.0" layoutY="301.0" prefHeight="17.0" prefWidth="119.0" text="Data De Nascimento:" />
+      <ComboBox fx:id="especialidadeCB" layoutX="445.0" layoutY="256.0" prefWidth="150.0" promptText="CARDIO" />
+      <Label layoutX="360.0" layoutY="260.0" prefHeight="17.0" prefWidth="80.0" text="Especialidade:" />
+      <Button fx:id="cadastrarB" layoutX="548.0" layoutY="355.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar" />
+      <Button fx:id="cancelarB" layoutX="466.0" layoutY="355.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+   </children>
+</AnchorPane>

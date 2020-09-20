@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.ui.controladores.telas.atendente.TelaInicialFXMLController">
+   <children>
+      <Pane layoutX="404.0" layoutY="88.0" prefHeight="382.0" prefWidth="274.0" style="-fx-background-color: #4444;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="70.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/Health-03-512.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="86.0" layoutY="164.0" text="Login Médico">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="219.0" text="Login:" />
+            <Label layoutX="35.0" layoutY="262.0" text="Senha:" />
+            <TextField fx:id="loginMedico" layoutX="86.0" layoutY="215.0" promptText="Digite o Login" />
+            <PasswordField fx:id="senhaMedico" layoutX="86.0" layoutY="258.0" promptText="Digite a Senha" />
+            <Button fx:id="loginMedicoB" layoutX="189.0" layoutY="328.0" mnemonicParsing="false" onAction="#loginMedico" text="Login" />
+         </children>
+      </Pane>
+      <Pane layoutX="25.0" layoutY="88.0" prefHeight="382.0" prefWidth="274.0" style="-fx-background-color: #4444;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="62.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/evarejo_homem_padrao.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="75.0" layoutY="171.0" text="Login Atendente">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="226.0" text="Login:" />
+            <Label layoutX="33.0" layoutY="269.0" text="Senha:" />
+            <TextField fx:id="loginAtendente" layoutX="75.0" layoutY="222.0" promptText="Digite o Login" />
+            <PasswordField fx:id="senhaAtendente" layoutX="75.0" layoutY="265.0" promptText="Digite a Senha" />
+            <Button fx:id="loginAtendenteB" layoutX="178.0" layoutY="330.0" mnemonicParsing="false" onAction="#loginAtendente" text="Login" />
+            <Button fx:id="cadastroB" layoutX="104.0" layoutY="330.0" mnemonicParsing="false" onAction="#cadastroAtendente" text="Cadastro" />
+         </children>
+      </Pane>
+      <Label layoutX="269.0" layoutY="25.0" text="Clinica Médica" textFill="#1b5fb9">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
